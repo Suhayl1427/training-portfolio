@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="secBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141916" />
+      <stop offset="100%" stop-color="#0E1210" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6F8D6D" />
+      <stop offset="100%" stop-color="#3A4D38" />
+    </linearGradient>
+    <pattern id="gridPattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#222B25" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#secBg)" />
+  <rect width="800" height="500" fill="url(#gridPattern)" />
+
+  <g transform="translate(60, 45)">
+    <rect width="680" height="410" rx="16" fill="#1A221E" stroke="#2D3A33" stroke-width="1.5" />
+
+    <rect width="680" height="42" rx="16" fill="#161D1A" />
+    <rect y="26" width="680" height="16" fill="#161D1A" />
+    <line x1="0" y1="42" x2="680" y2="42" stroke="#2D3A33" stroke-width="1" />
+
+    <circle cx="28" cy="21" r="5" fill="#EE6A5F" />
+    <circle cx="44" cy="21" r="5" fill="#F5BD4F" />
+    <circle cx="60" cy="21" r="5" fill="#61C454" />
+
+    <rect x="200" y="10" width="280" height="22" rx="6" fill="#0E1210" stroke="#26332C" stroke-width="1" />
+    <text x="340" y="25" font-family="monospace" font-size="11" fill="#78887F" text-anchor="middle">chronosguard.eth/verify</text>
+
+    <g transform="translate(40, 70)">
+      <g transform="translate(0, 0)">
+        <rect width="260" height="295" rx="14" fill="#131916" stroke="#2A3830" stroke-width="1.2" />
+        
+        <g transform="translate(130, 95)">
+          <circle cx="0" cy="0" r="64" fill="#1E2822" stroke="#37483E" stroke-width="2" />
+          <path d="M 0 -42 L 34 -24 L 34 16 C 34 38, 0 54, 0 54 C 0 54, -34 38, -34 16 L -34 -24 Z" fill="url(#shieldGrad)" />
+          <path d="M -12 6 L -3 15 L 14 -4" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+
+        <text x="130" y="195" font-family="'Manrope', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">ChronosGuard</text>
+        <text x="130" y="218" font-family="'DM Sans', sans-serif" font-size="12" font-weight="500" fill="#7C9484" text-anchor="middle">Blockchain Asset Protection</text>
+
+        <rect x="50" y="240" width="160" height="28" rx="14" fill="#24342A" stroke="#46614F" stroke-width="1" />
+        <circle cx="68" cy="254" r="4" fill="#52B770" />
+        <text x="136" y="259" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#75C98E" text-anchor="middle">SMART CONTRACT ACTIVE</text>
+      </g>
+
+      <g transform="translate(285, 0)">
+        <rect width="315" height="295" rx="14" fill="#131916" stroke="#2A3830" stroke-width="1.2" />
+
+        <g transform="translate(22, 24)">
+          <text x="0" y="14" font-family="'Manrope', sans-serif" font-size="14" font-weight="700" fill="#E1E6E2">VERIFICATION LEDGER</text>
+          <text x="0" y="32" font-family="monospace" font-size="11" fill="#6A8073">Network: Ethereum Sepolia Testnet</text>
+
+          <g transform="translate(0, 52)">
+            <rect width="271" height="52" rx="8" fill="#1B241F" stroke="#293830" stroke-width="1" />
+            <text x="14" y="22" font-family="monospace" font-size="11" fill="#7C9484">Keccak-256 Hash</text>
+            <text x="14" y="39" font-family="monospace" font-size="12" font-weight="600" fill="#E6EBE7">0x8f2a93b4...e71c9a02</text>
+          </g>
+
+          <g transform="translate(0, 116)">
+            <rect width="271" height="52" rx="8" fill="#1B241F" stroke="#293830" stroke-width="1" />
+            <text x="14" y="22" font-family="monospace" font-size="11" fill="#7C9484">Block Timestamp</text>
+            <text x="14" y="39" font-family="monospace" font-size="12" font-weight="600" fill="#75C98E">#19,842,109 (Immutable)</text>
+          </g>
+
+          <g transform="translate(0, 180)">
+            <rect width="271" height="52" rx="8" fill="#1B241F" stroke="#293830" stroke-width="1" />
+            <text x="14" y="22" font-family="monospace" font-size="11" fill="#7C9484">Tamper Status</text>
+            <text x="14" y="39" font-family="monospace" font-size="12" font-weight="600" fill="#FFFFFF">0 Conflicts Detected</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
